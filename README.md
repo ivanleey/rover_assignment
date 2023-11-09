@@ -30,4 +30,4 @@ You can now access the frontend via http://localhost:3000 and the backend via ht
     -   `/login`: if a user is already signed in redirect to `/products`
     -   `/products`: a user must be signed in to view
 -   You can use either the Rest or the GraphQL API
--   Handle When a session expires by refreshing the session and retrying the same request that failed due to session expiry. To help test this flow you can run the following command that will expire all sessions (refresh tokens are still valid after expiring): `docker-compose run --rm postgres psql -U postgres dev -c "UPDATE sessions SET expires_at = now()"`
+-   Handle When a session expires by refreshing the session and retrying the same request that failed due to session expiry. To help test this flow you can run the following command that will expire all sessions (refresh tokens are still valid after expiring): `docker-compose exec postgres psql -U postgres dev -c "UPDATE sessions SET expires_at = now()"`

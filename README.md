@@ -4,7 +4,7 @@ Welcome and thank you for taking the time to complete the Rover take-home assign
 
 You will have 4 days to complete the assignment. Once you have completed your solution, please reply with a link to a github repository.
 
-The goal of this assignment is to build the Rover login page with public and protected routes.
+The goal of this assignment is to build the Judo login page with public and protected routes.
 
 ## Prerequisite
 

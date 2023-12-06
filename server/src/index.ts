@@ -1,4 +1,5 @@
 import Express from 'express'
+import cors from 'cors'
 import { Server } from 'http'
 import Knex from 'knex'
 import Config from './config'
@@ -30,6 +31,7 @@ const app = Express()
 app.disable('x-powered-by')
 
 async function main() {
+    app.use(cors())
     console.info('Server starting...')
     const graphQLServer = await NewGraphQLServer({ stores })
     graphQLServer.applyMiddleware({ path: '/graphql', app })

@@ -1,0 +1,135 @@
+
+@font-face {
+    font-family: 'SourcesSansPro-Semibold';
+    src: url(../../assets/font/SourceSansPro-Semibold.otf) format('opentype');
+}
+@font-face {
+    font-family: 'SourcesSansPro-Regular';
+    src: url(../../assets/font/SourceSansPro-Regular.otf) format('opentype');
+}
+@font-face {
+    font-family: 'SourcesSansPro-Bold';
+    src: url(../../assets/font/SourceSansPro-Bold.otf) format('opentype');
+}
+#root {
+    max-width: 1280px;
+    margin: 0 auto;
+   
+  }
+.loginCard{
+
+    background-color: #FFFFFF;
+    box-shadow: 0 0 6px 0 rgba(0,0,0,0.20);
+    border-radius: 10px;
+    width: 466px;
+    // prototype did not give exactly height 
+    height: 550px;
+    box-sizing: border-box;
+    padding: 56px;
+    position: relative;
+    
+    
+}
+.logoStyle{
+    width: 143px;
+    height: 24px;
+    
+}
+.signInContainer{
+    margin-top: 40px;
+    display:flex;
+    justify-content: flex-start;
+}
+
+.signInText{
+    font-family: 'SourcesSansPro-Semibold';
+    font-size: 30px;
+    color:#000000;
+    line-height: 40px;
+   
+}
+.emailContainer{
+    margin-top: 32px;
+}
+
+.emailAndPasswordText{
+    font-family:'SourcesSansPro-bold' ;
+    font-size: 14px;
+    color:#000000;
+    line-height: 24px;
+}
+.emailInputContainer{
+    margin-top: 16px;
+}
+.emailAndPasswordInput{
+    width: 354px;
+    height: 40px;
+    background: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    border-radius: 2px;
+    outline: none;
+    font-size: 14px;
+    color: #000000;
+    line-height: 24px;
+    box-sizing: border-box;
+    padding:8px 0 8px 16px;
+
+}
+
+.emailInputError{
+    width: 354px;
+    height: 40px;
+    background: #FFFFFF;
+    border: 1px solid #960606;
+    border-radius: 2px;
+    outline: none;
+    font-size: 14px;
+    color: #000000;
+    line-height: 24px;
+    box-sizing: border-box;
+    padding:8px 0 8px 16px;
+}
+.passwordInputContainer{
+    margin-top: 16px;
+}
+.passwordContainer{
+    margin-top: 24px;
+}
+.signInButton{
+    width: 354px;
+    height: 40px;
+    border: none;
+    background-color: #9A48D6;
+    border-radius: 2px;
+    padding:8px 0 8px 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+    cursor: pointer;
+    &:hover{
+        background-color: #8307db;
+    }
+}
+.signInButtonText{
+    font-size: 14px;
+    font-family: 'SourcesSansPro-bold';
+    color:#FFF;
+    line-height: 24px;
+}
+
+.informText{
+    font-family: 'SourcesSansPro-Regular';
+    font-size: 14px;
+    color: #858484;
+    letter-spacing: 0;
+    
+    line-height: 24px;
+}
+.informContainer{
+    display: flex;
+    justify-content: center;
+}
+
+
